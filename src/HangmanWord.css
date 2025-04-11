@@ -1,3 +1,12 @@
 .hangman-word {
-    
+    display: flex;
+    gap: 2rem;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.word-letter{
+    border-bottom: 0.1em solid black;
 }
