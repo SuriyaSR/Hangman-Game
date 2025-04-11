@@ -18,14 +18,15 @@ function App() {
   return (
     <>
       <div className="container">
-
-      </div>
-      <div className="game-result">
-        Lose Win
-      </div>
-      <HangmanDrawing />
-      <HangmanWord />
-      <Keyboard />
+        <div className="game-result">
+          Lose Win
+        </div>
+        <HangmanDrawing />
+        <HangmanWord />
+        <div style={{alignSelf: "stretch"}}>
+          <Keyboard />
+        </div>        
+      </div>      
     </>
   )
 }
