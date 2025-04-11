@@ -1,0 +1,39 @@
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0.5rem;
+}
+
+button {
+    width: 100%;
+}
+
+.keys-button{
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+/* .keys-button:hover,
+.keys-button:focus {
+    background-color: hsl(200, 100%, 75%);
+} */
+
+.keys-button.active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
+.keys-button.inactive {
+    opacity: .3;
+}
+
+.keys-button:hover:not(:disabled),
+.keys-button:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+}

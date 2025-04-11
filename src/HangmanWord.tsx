@@ -2,7 +2,7 @@ import "./HangmanWord.css";
 
 export function HangmanWord () {
     const word = "test";
-    const guessedLetters = ['e', 't', 'g'];
+    const guessedLetters = [];
     return (
         <div className="hangman-word">
             {word.split("").map((letter, index) => (
