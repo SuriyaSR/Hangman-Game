@@ -23,15 +23,16 @@ const LEFT_LEG = (
     <div className="left-leg" />
 )
 
-export function HangmanDrawing () {
+type HangmanDrawingProps = {
+    numberOfGuesses: number
+}
+
+const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG]
+
+export function HangmanDrawing ({numberOfGuesses} : HangmanDrawingProps) {
     return (
         <div className="hangman-drawing">
-            {HEAD}
-            {BODY}
-            {RIGHT_ARM}
-            {LEFT_ARM}
-            {RIGHT_LEG}
-            {LEFT_LEG}
+            {BODY_PARTS.slice(0, numberOfGuesses)}
             <div className="drop-bar" />
             <div className="hang-bar" />
             <div className="upright-bar" />
