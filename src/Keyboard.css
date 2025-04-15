@@ -19,21 +19,20 @@ button {
     color: black;
 }
 
-/* .keys-button:hover,
+.keys-button:hover:not(:disabled),
+.keys-button:focus:not(:disabled),
+.keys-button:hover,
 .keys-button:focus {
     background-color: hsl(200, 100%, 75%);
-} */
+}
 
 .keys-button.active {
     background-color: hsl(200, 100%, 50%);
     color: white;
+    cursor: not-allowed;
 }
 
 .keys-button.inactive {
     opacity: .3;
-}
-
-.keys-button:hover:not(:disabled),
-.keys-button:focus:not(:disabled) {
-    background-color: hsl(200, 100%, 75%);
+    cursor: not-allowed
 }
